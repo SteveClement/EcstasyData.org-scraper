@@ -80,7 +80,7 @@ us_hsh = {
 	'WY'=>'Wyoming'
 }
 
-base_url = 'http://www.ecstasydata.org'
+base_url = 'https://www.ecstasydata.org'
 url = base_url + '/index.php?sort=DatePublishedU+desc&start=0&max=999999'
 page = Nokogiri::HTML(open(url))
 tr_arr = page.css('tbody tr')
@@ -105,7 +105,7 @@ tr_arr.each{|tr|
 		rescue Exception => e
 			state_abbrev_test = ''
 		end # DONE: begin
-		
+
 		if state_abbrev_test===abbrev
 			state = state_name
 			city = location.split(',')[0].strip

@@ -6,5 +6,9 @@ This is a Ruby script that scrapes pill data from EcstasyData.org and puts the d
 - nokogiri
 - sequel
 
+## apt-get
+
+sudo apt-get install ruby-nokogiri ruby-sequel ruby-sqlite3
+
 ## Misc
 Script last updated in 2013
